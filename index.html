@@ -1,0 +1,1322 @@
+<!DOCTYPE html>
+<html>
+<title>Santa Rosa Fires</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" herf=ieee > 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+<script> src= "https://code.jquery.com/jquery-3.3.1.js"</script>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("newmanbg.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+    
+    
+/*this portion of style is for the calendar */
+ {box-sizing: border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: #800000;
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  background: #FFFFFF;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+  .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li, .days li {width: 12.5%;}
+  .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li, .days li {width: 12.2%;}
+}
+w3-bar .w3-button {
+  padding: 16px;
+}
+    
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f9f9f9}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}    
+    
+    
+/*css for the calendar button*/
+.button {
+  background-color: #800000; /* red */
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button5:hover {
+  background-color: #708090;
+  color: white;
+}
+.button5 {border-radius: 50%;}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FFFFFF;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FFFFFF;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/*this portion is for the css for the timeline*/
+    body{
+        font-family: tahoma;
+        font-size: 15px;
+        line-height: 1.75;
+        padding: 0;
+        margin: 0;
+    }
+    #timeline{
+        display: flex;
+        background-color: #800000;
+    }
+    #timeline:hover .t1-item{
+        width: 23.3333%;
+    }
+    .t1-item{
+        transform: translate3d(0,0,0);
+        position: relative;
+        width: 25%;
+        height: 100vh;
+        min-height: 500px;
+        color: white;
+        overflow: hidden;
+        transition: width 0.3s ease;
+    }
+    .t1-itrem:before, .t1.item:after{
+        transform: translate3d(0,0,0);
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .t1-item:after{
+        background: rgba(3,22,37,0.85);
+        opacity: 1;
+        transition: opacity 0.3s ease;
+    }
+     .t1-item:before{
+        background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1)75%);
+        z-index: 1;
+         opacity: 0;
+         transform: translate3d(0,0,0) translateY(50%);
+         transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    t1-item:hover{
+     width: 30% !important;   
+    }
+    t1-item:hover:after{
+        opacity: 0;
+    }
+    t1-item:hover:before{
+        opacity: 1;
+        transform: translate3d(0,0,0) translateY(0);
+        transition: opacity 1s ease, transform 1s ease 0.25s;
+    }
+    .t1-item:hover .t1-content{
+        opacity: 1;
+        transform: translateY(0);
+        transition: all 0.75s ease 0.3s;
+    } 
+    .t1-item:hover .t1-bg{
+        filter: grayscale(0);
+    }
+    .t1-content{
+        transform: translate3d(0,0,0) translateY(25px);
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        margin: 0.1618em;
+        top: 22%;
+        opacity: 0;
+    }
+    t1-content h1{
+        font-family: tahoma;
+        text-transform: uppercase;
+        color: #1779cf;
+        font-size: 1.44rem;
+        font-weight: normal;
+    }
+    .t1-year{
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%)translateY(-50%);
+        z-index: 1;
+        border-top: 0px solid white;
+        border-bottom: 0px solid white;
+    }
+    .t1-year p{
+        font-family: tahoma;
+        font-size: 1.628rem;
+        line-height: 0;
+    }
+    .t1-bg{
+        transform: translate3d(0,0,0);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-size: cover;
+        background-position: center center;
+        transition: filter 0.3se ease;
+        filter: grayscale(100%);
+    }
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">The Tubb Fire</a>
+    <!-- Right-sided navbar links -->
+    
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <img class="w3-image" src="mexicobg2.jpg" alt="Me" width="1500" height="600">
+  <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
+    <h3 class="w3-hide-medium w3-hide-small w3-xxxlarge">The Tubb Fire 2017</h3>
+    <h5 class="w3-hide-large" style="white-space:nowrap">Santa Rosa, California</h5>
+    <h4 class="w3-hide-medium w3-hide-small">Santa Rosa, California</h4>
+      <div class="dropdown">
+          
+          <p><a href="#author" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">By Yanet Nunez Galvan</a></p>
+          <div class="dropdown-content">
+              <a >English 20-03</a>
+                <a >December 05, 2019</a>
+            </div>
+      </div>
+  </div> 
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:50px 16px" id="about">
+  <h3 class="w3-center">The Tubbs Fire</h3>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    
+    <div class="w3-half ">
+      <p class="w3-large">Brief Summary</p>
+      <p>On October 2017 around 9:45pm, "a private electrical system adjacent to a residential structure" (Statement by Cal Fire) fell due to high winds and started a fire near Tubbs Lane in Napa County. According Cal Fire, the wind hit 30 mph during the start of the fire however within the hour the wind's speed became 41 mph. According to the Press Democrats, at 11:52am that same day, "firefighters called for mandatory evacuation of the entire area, between Calistgo and Santa Rosa. On October 9, 2017 around 1am the fires reached the Santa Rosa limits. Within the next to hours, at 3 am, the total fataliaties became 17. On October 31st 2017, the fire was 100% contained and 36,807 acrs were burned and a total of 22 fataliaties.    </p>
+    </div>
+
+     <div class="w3-half w3-center">
+      <img src="firehouse.jpg" alt="grouppic">
+    </div>
+  </div>
+</div>
+
+<!-- this section if for the videos -->
+
+    <div class="w3-container w3-grey" style="padding:10px 16px" id="MotherAndChild">
+  <div class="w3-row-padding w3-grey" style="margin-top:34px">
+    <div class="slideshow-container">
+  <style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.text-block {
+  position: top;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/*this portion is for the timeline year*/
+     
+</style>
+ 
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  
+  <iframe width="1005" height="615" src="https://www.youtube.com/embed/moSJAUo4eEA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  <div class="text-block">
+    <p>Santa Rosa Residents' point of view of the Tubbs fire</p>
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <iframe width="1005" height="615" src="https://www.youtube.com/embed/5C0feQ4UWAA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <div class="text-block">
+    <p>The Devastating from the fire in Santa Rosa</p>
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <iframe width="1005" height="615" src="https://www.youtube.com/embed/HCNSDk7fyYE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <div class="text-block">
+    <p>This video was taken from a Berkeley firefighter and shows his perspective as he first arrive to fight the fire.</p>
+  </div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+</div>
+        
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    
+
+</div>
+
+<div class="w3-center w3-light-grey w3-padding-64" id="work">
+    <div >
+        <h3><b>The Victims of the Tubb Fire</b></h3>
+      <h5>These are the people who lost their live within the fire. They were sibling, couples, parents, but overall they were members of the Santa Rosa community. May we never forget their legacy. </h5>
+        
+  </div>
+  <div >
+      <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1vMun64BLqyMyfjY10wdeXm_FIrjZwGC3" width="600" height="425"></iframe>
+  </div>
+    <h9>click on the markers in the map to know the victims' names.</h9>
+</div>
+<!-- ths portion is for the  -->
+
+  <div class="w3-container w3-white" style="padding:20px 16px">
+  <style>
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: lightgrey;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+    <div class="row">
+  <div class="column">
+    
+    <div class="content">
+      <img src="q1.jpg" alt="Mountains" style="width:100%">
+        <h5><b>Were you prepare to evacuation?</b> </h5>
+      <p>One out of the 20 people that took the survey none were ready to evacuated. Five people believed that the fire would not reach their home. However by the time they decided to leave they only had ten minutes to take what they could. </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="q2.jpg" alt="Lights" style="width:100%">
+      <h5><b>Did your house burn during the fires?</b></h5>
+      <p>Only 14 people that took survey lost their house. One person had only the side of the house burn. Firefighters were the person neighborhood and managed to save the person house. In total 15/20 people did have the fire effect their home.  </p>
+      
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="q3.jpg" alt="Nature" style="width:100%">
+      <h5><b>Did you stay in your home instead of evacuate? </b></h5>
+      <p>3/20 people stayed home instead of leaving the city. They stated that they felt that the fire would not go near them. One of these people decided to volunteer and take care of animals who got separated from their owner during the fire.  </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="q4.jpg" alt="Mountains" style="width:100%">
+      <h5><b>Do you think Santa Rosa can have another fire?</b></h5>
+      <p>10/20 believe that Santa Rosa could have another fire. One person stated that fires in California has been becoming the norm."During fire season is when I get the most worried about my family's safety," stated a single mother.</p>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+<!-- this portion will be the timeline -->
+  
+
+<!-- Work Section -->
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+<!-- Calendar Section -->
+<div class="w3-container w3-grey" style="padding:80px 16px" id="calendar">
+
+   <div class="month">      
+  <ul>
+    <li>
+      OCTOBER 2017<br>
+      <span style="font-size:10px">Acres Burned and Percentage of Containment</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Sun</li>
+  <li>Mon</li>
+  <li>Tue</li>
+  <li>Wed</li>
+  <li>Thu</li>
+  <li>Fri</li>
+  <li>Sat</li>
+</ul>
+
+<ul class="days">  
+  <li><strong>01</strong></li>
+  <li><strong>02</strong></li>
+  <li><strong>03</strong></li>
+  <li><strong>04</strong></li>
+  <li><strong>05</strong></li>
+  <li><strong>06</strong></li>
+  <li><strong>07</strong></li>
+  <li><div class="dropdown"><button class="button button5">08</button><div class="dropdown-content">
+      <p>9:45pm The Tubbs fire begins</p> </div></li>
+  <li><div class="dropdown"><button class="button button5">09</button><div class="dropdown-content">
+      <p>25,000 arcres burned</p><p>0% Contained</p> </div></li>
+  <li><strong>10</strong></li>
+  <li><strong>11</strong></li>
+  <li><strong>12</strong></li>
+  <li><strong>13</strong></li>
+  <li><div class="dropdown"><button class="button button5">14</button><div class="dropdown-content">
+      <p>35,470 arcres burned</p><p>50% Contained</p> </div></li>
+  <li><strong>15</strong></li>
+  <li><strong>16</strong></li>
+  <li><strong>17</strong></li>
+  <li><strong>18</strong></li>
+  <li><div class="dropdown"><button class="button button5">19</button><div class="dropdown-content">
+      <p>36,432 arcres burned</p><p>92% Contained</p> </div></li>
+  <li><strong>20</strong></li>
+  <li><strong>21</strong></li>
+  <li><strong>22</strong></li>
+  <li><strong>23</strong></li> 
+  <li><strong>24</strong></li>
+  <li><strong>25</strong></li>
+  <li><strong>26</strong></li>
+  <li><strong>27</strong></li>
+  <li><strong>28</strong></li>
+  <li><strong>29</strong></li>
+  <li><strong>30</strong></li>
+  <li><div class="dropdown"><button class="button button5">31</button><div class="dropdown-content">
+      <p>36,807 arcres burned</p><p>100% Contained</p><p>The Tubbs fire ends</p> </div></li>
+</ul>
+</div>
+<div class="w3-container w3-light-grey" style="padding:50px 50px" id="contact">
+    <div class="w3-center"><h1>Lesie Garnica Interview</h1></div>
+    <div class="w3-center"> <p>Lesie is a Sac State student who, during her senior year in high school, lost her house in the Tubb fire</p></div>
+      <div class="w3-center">
+            <img src="https://docs.google.com/drawings/d/e/2PACX-1vScRqtg2OFBZdKr3OcBYDCvL9Q8XdU-0gg1o1NlpJUuZx4F1Y67rh0BlLlno3g-z6dYaX5HXFheZHvk/pub?w=960&amp;h=720">
+        </div>
+    </div>
+
+    
+<div class="w3-container w3-white" style="padding:50px 50px" id="contact">
+    <div class="w3-center"><h1>HOW DID THE FIRE START?</h1></div>
+    <style>
+
+
+.containn {
+  border: 4px solid #000000;
+  
+  
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.darker {
+  border-color: #800000;
+  background-color: #ddd;
+}
+
+.containn::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.containn img {
+  float: left;
+  max-width: 200px;
+  width: 100%;
+  margin-right: 20px;
+ 
+}
+
+.containn img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+.time-left {
+  float: left;
+  color: #999;
+}
+</style>
+
+
+
+
+<div class="containn">
+  <img src="lesie.jpg" alt="Avatar" style="width:100%;">
+  <p>According to the Press Democrat, “Wildfire victims have stepped into the fray of one of the largest corporate bankruptcy cases in U.S. history, backing a competing proposal by a group of PG&E bondholders to wrest control of the company from its majority shareholders and set aside more money for individuals, businesses and others who suffered from catastrophic wildfires sparked by electrical equipment in 2017 and 2018.” (Press Democrat) In 2017, the Tubb Fire was caused due to electrical equipment falling and starting a spark. The equipment within the road that the fire start rarely had PG&E inspect the safety of the equipment. This, of course, was not the first time PG&E equipment fell and started a fire. In 2015, two years before the Tubb fire, a power cable fell since a tree was pushing the power line down. This happened right in front of my school next to a patch of dry grass. Within minutes a small fire started forming. My pe teacher went to the fire with a hose and manage to kill the fire. Even though nothing happens and no one got hurt, it showed us that the lack of attention PG&E has with their equipment. After the Tubb fires PG&E’s equipment started a new fire in 2018. In Butte County, “a live wire broke free a 100-year-old transmission tower and started the Camp Fire.”(Press Democrat) A total of 14,000 homes were burned and 85 people were killed. During 2017-2018, PG&E started to seek bankruptcy due to their liabilities with the Fires. The proposal for the amount PG&E owes the victims of the fires is still under development.   </p>
+    
+    </div>
+    </div>
+<div class="w3-container w3-dark-grey" style="padding:50px 50px" id="contact">
+    <div class="w3-center"><h1>MY EXPERIENCE</h1></div>
+    <style>
+
+
+.contain {
+  border: 4px solid #fff;
+  
+  
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+.contain::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.contain img {
+  float: left;
+  max-width: 200px;
+  width: 100%;
+  margin-right: 20px;
+ 
+}
+
+.contain img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+.time-left {
+  float: left;
+  color: #999;
+}
+</style>
+
+
+
+
+<div class="contain">
+  <img src="redsky.jpg" alt="Avatar" style="width:100%;">
+  <p>The day was October 9, 2017, it was about 1:30 in the morning. I was awakened by my mom’s screams, “Get up! The city is on fire.” At first, I did not believe it, I thought that I was in some dream, that I was half awake and half asleep. However a few minutes I started to notice a strong smell, similar to burned hair. I got up from my bed and saw my mom packing documents, clothes, and photo albums in some suitcases. I went to open the front door and that was when I realized it was not a dream. The smell got stronger and made my lungs hurt with every breath I took. I remember my eyes tearing up and how bright the sky looked. The two main things that I remember from that day with vivid detail was the smell and the color of the sky. The sky was bright red with a moment of yellow flash. It looked like the type of sky you would see in a horror film. As I walked more outside I started seeing ash far some the sky. The ash covered my mom’s white car, making it appear dark grey. “Help me pack!” my mom yelled at me when I was perceiving the sky. At the time of the fire, the only people at the house were my mom, my two younger brothers, and I. My dad was out of town doing work and was not scheduled to come back for another two weeks. My older brother was serving in the military.  I decided to take charge since my mom was panicking. We took the two cars that had the most gas and filling them with our suitcases. We also packed a container of water, a few small snacks, and the dog food with the dogs’ bowls. Since the 101 highway was closed due to the fire we took the back road to get to San Franciso. Once we got to SF we tried to rent out a room for two days but the two hotels that and rooms available and were within our budget did not allow our bigger dogs in the room.  We just decided to stay in the car for the night to make it easier for us. The next day we got a call from one of our neighbors saying that the fire is slowing down and is not spreading within our area. We decided to drive back home and wait it out. As we entered the Santa Rosa city limits there was no one in sight. It looked like a ghost town. The air was still thick and smell was still strong. The only difference was the sky was slightly more grey. We stayed inside our house for about a week and not going outside. After that, we would go outside just to buy more supplies within another city. During the third week of the fire, more and more people started to come back to Santa Rosa. Many returning back and releasing their home was burned to ash.  I also returned back to school that week however the school did not feel the same. Many people lost their homes and for the most part, we just went to class and take about what we are feeling about the situation. My school did not go back to normal until the second week of December. But our school was never the same, our city was never the same. I am still able to walk around my city and see the ashes of the buildings. My city will always have these scars and they will always remind us of what happened during October. But we would also remember what happened after that fire, our community became stronger and we were able to rise from the ashes.  </p>
+    
+    </div>
+    </div>
+<!-- California history with fires -->
+
+ <!-- this portion will have the timeline with pictures as backgrounds-->
+  
+
+   <section id="timeline">
+       <div class="t1-item">
+           <div class="t1-bg" style="background-image: url(before.jpg)"></div>
+           <div class="t1-year">
+                <p>BEFORE</p>
+           </div>
+           <div class="t1-content">
+               <p>
+                  According to Visit Santa Rosa.com, is in "the urban heart of wine country, you'll find Santa Rosa: a city with a cool vibe and vibrant culture ready and waiting to be explored. Santa Rosa is the happening hub for all there is to see, do, eat, drink, hike, bike and explore in Sonoma County." However to me Santa Rosa is home. Everyone is friendly and happy. We have lots of trees, mainly RedWood trees. Our city is naturally beautiful, full of trees and flowers and sunshine. Many people like to hike up to in the mountains to see the sunset and sunrise.    
+               </p>
+           
+           </div>
+       
+       </div>
+       <!--this is the second pic 2017-->
+       <div class="t1-item">
+           <div class="t1-bg" style="background-image: url(during.jpg)"></div>
+           <div class="t1-year">
+                <p class="f2 heading">DURING</p>
+           </div>
+           <div class="t1-content">
+               <p>
+                 "The Tubb fire started on October 8, 2017 around 9:43pm. at 10:52pm firefighters called for a mandatory evacuation of all of Porter Creek road and Petrified Forest Road. Around  11 pm Michael Dorbach was the first person to died. AT 11:58pm firefighters called for an evacution of the entire between Calistoga and Santa Rosa. At 1:12am firefighters warned that the fire would reach eastern Santa Rosa within an hour. Around 3 am a total of 18 people died due to the fire. "(Press Democrat)
+               </p>
+           
+           </div>
+       
+       </div>
+       <!--thie portion is for 2018-->
+       <div class="t1-item">
+           <div class="t1-bg" style="background-image: url(after.jpg)"></div>
+           <div class="t1-year">
+                <p class="f2 heading">AFTER</p>
+           </div>
+           <div class="t1-content">
+              
+               <p>
+                   Many school, hospital, and stores were close after the fire due to the heavy smoke within the air. Most of the places turned to regular hours after two week. The hospital took the longest to turn to normal since during the fire many patients needed to be transferred to another location for safety. The people who lost their homes stayed in some college campus and the Sonoma County FairGround until they were able to find a better stay. 
+               </p>
+           
+           </div>
+       
+       </div>
+       <!--this portion is for the 2019-->
+       <div class="t1-item">
+           <div class="t1-bg" style="background-image: url(year.jpg)"></div>
+           <div class="t1-year">
+                <p class="f2 heading">YEAR LATER</p>
+           </div>
+           <div class="t1-content">
+         
+               <p>
+                    According to LATimes, around 5,500 homes were burned completely because of the Tubb fire. "Residents who face enormous insurance gaps are dipping into savings to construct houses similar to the ones they lost or building smaller ones. Others are buying elsewhere in a county that suffered a serious shortage of affordable housing even before the fires. In this increasingly ruthless housing market, displaced renters have been left to compete with more moneyed families who also lost their homes." (LATimes) Currently, if you drive around the city you would see pockets of empty land. However, within these pockets still holds the outline of the homes that once stood. In some of these "homes" you can see picture frames and flowers placed, and you know that someone passed away there. Even though the smoke is no longer within the air, you still have trouble breathing standing there.
+               </p>
+           
+           </div>
+       
+       </div>
+       
+    
+    </section> 
+ 
+        <div class="w3-container w3-light-grey" style="padding:50px 50px" id="contact">
+    <div class="w3-center"><h1>MY EXPERIENCE</h1></div>
+    <style>
+
+
+.containnn {
+  border: 4px solid #000;
+  
+  
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+.containnn::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.containnn img {
+  float: left;
+  max-width: 200px;
+  width: 100%;
+  margin-right: 20px;
+ 
+}
+
+.containnn img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+.time-left {
+  float: left;
+  color: #999;
+}
+</style>
+
+
+
+
+<div class="containnn">
+  <img src="bg1.jpg" alt="Avatar" style="width:100%;">
+  <p>According Park Williams, a bioclimatologist at Columbia University's Lamont-Doherty Earth Observatory, "Fire, in some ways, is a very simple thing. As long as stuff is dry enough and there’s a spark, then that stuff will burn." (Park Williams) California's climate has been becoming more and more dryer due to climate change. Fire grows with dry air and oxygen. The hotter temperature is making it easier to grow a small fire in fast rate. Another reason as to why California has so many fires is due to man made equipment. Many of the largest fires that happened in California started due to power lines falling and starting a small fire then the wind helps the flames grow. </p>
+    
+    </div>
+    </div>
+ 
+     
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+   ></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+ 
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 14px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  flex-direction: column;
+}
+ 
+ 
+        
+.timeline {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 5px 25px 5px rgba(0, 0, 0, .2);
+}
+.timeline .swiper-container {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.timeline .swiper-wrapper {
+  transition: 2s cubic-bezier(0.68, -0.4, 0.27, 1.34) 0.2s;
+}
+.timeline .swiper-slide {
+  position: relative;
+  color: #fff;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+    
+}
+.timeline .swiper-slide::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  right: -115%;
+  bottom: -10%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .7);
+  box-shadow: -230px 0 150px 60vw rgba(0, 0, 0, .7);
+  border-radius: 100%;
+}
+.timeline .swiper-slide-content {
+  position: absolute;
+  text-align: center;
+  width: 80%;
+  max-width: 310px;
+  right: 50%;
+  top: 13%;
+  transform: translate(50%, 0);
+  font-size: 12px;
+  z-index: 2;
+}
+.timeline .swiper-slide .timeline-year {
+  display: block;  
+  font-size: 22px !important;
+  margin-bottom: 50px;
+  transform: translate3d(20px, 0, 0);
+  color: white;
+    font-style: italic;
+  font-weight: 300;
+  opacity: 0;
+  transition: 0.2s ease 0.4s;
+}
+.timeline .swiper-slide .timeline-title {
+  font-weight: 800;
+  font-size: 30px !important;
+  margin: 0 0 30px;
+  opacity: 0;
+  transform: translate3d(20px, 0, 0);
+  transition: 0.2s ease 0.5s;
+}
+.timeline .swiper-slide .timeline-text {
+  line-height: 1.8;
+  opacity: 0;
+  transform: translate3d(20px, 0, 0);
+  transition: 0.2s ease 0.6s;
+    font-size: 14px;
+}
+.timeline .swiper-slide-active .timeline-year {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: 0.4s ease 1.6s;
+     
+}
+.timeline .swiper-slide-active .timeline-title {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: 0.4s ease 1.7s;
+}
+.timeline .swiper-slide-active .timeline-text {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: 0.4s ease 1.8s;
+}
+.timeline .swiper-pagination {
+  right: 15% !important;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 18px;
+  z-index: 1;
+}
+.timeline .swiper-pagination::before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background-color: rgba(255, 255, 255, .2);
+}
+.timeline .swiper-pagination-bullet {
+  width: auto;
+  height: auto;
+  text-align: center;
+  opacity: 1;
+  background: transparent;
+  color: #fff;
+  margin: 15px 0 !important;
+  position: relative;
+}
+.timeline .swiper-pagination-bullet::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -32.5px;
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  background-color: #fff;
+  transform: scale(0);
+  transition: 0.2s;
+}
+.timeline .swiper-pagination-bullet-active {
+  color: #fff;
+}
+.timeline .swiper-pagination-bullet-active::before {
+  transform: scale(1);
+}
+.timeline .swiper-button-next, .timeline .swiper-button-prev {
+  background-size: 20px 20px;
+  top: 15%;
+  width: 20px;
+  height: 20px;
+  margin-top: 0;
+  z-index: 2;
+  transition: 0.2s;
+}
+.timeline .swiper-button-prev {
+  left: 8%;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23d4a024'%2F%3E%3C%2Fsvg%3E");
+}
+.timeline .swiper-button-prev:hover {
+  transform: translateX(-3px);
+}
+.timeline .swiper-button-next {
+  right: 8%;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23d4a024'%2F%3E%3C%2Fsvg%3E");
+}
+.timeline .swiper-button-next:hover {
+  transform: translateX(3px);
+}
+@media screen and (min-width: 768px) {
+  .timeline .swiper-slide::after {
+    right: -30%;
+    bottom: -8%;
+    width: 240px;
+    height: 50%;
+    box-shadow: -230px 0 150px 50vw rgba(0, 0, 0, .7);
+  }
+  .timeline .swiper-slide-content {
+    right: 30%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 310px;
+    font-size: 11px;
+    text-align: right;
+  }
+  .timeline .swiper-slide .timeline-year {
+    margin-bottom: 0;
+    font-size: 32px;
+  }
+  .timeline .swiper-slide .timeline-title {
+    font-size: 46px;
+    margin: 0;
+  }
+  .timeline .swiper-pagination {
+    display: flex;
+  }
+  .timeline .swiper-button-prev {
+    top: 15%;
+    left: auto;
+    right: 15%;
+    transform: rotate(90deg) translate(0, 10px);
+  }
+  .timeline .swiper-button-prev:hover {
+    transform: rotate(90deg) translate(-3px, 10px);
+  }
+  .timeline .swiper-button-next {
+    top: auto;
+    bottom: 15%;
+    right: 15%;
+    transform: rotate(90deg) translate(0, 10px);
+  }
+  .timeline .swiper-button-next:hover {
+    transform: rotate(90deg) translate(3px, 10px);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .timeline .swiper-slide::after {
+    right: -20%;
+    bottom: -12%;
+    width: 240px;
+    height: 50%;
+    box-shadow: -230px 0 150px 39vw rgba(0, 0, 0, .7);
+  }
+  .timeline .swiper-slide-content {
+    right: 25%;
+  }
+}
+
+    
+    </style>
+    
+
+<body>
+    <div class="container">
+ 
+  <div class="timeline">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image: url(sherpa.jpg)" data-year="2016">
+          <div class="swiper-slide-content"><span class="timeline-year">2016</span>
+            <h4 class="timeline-title">The Sherpa Fire</h4>
+            <p class="timeline-text">According to the California Department of Foresty and Fire Protection, in 2016, a total of 7,349 fires had burned about 670k acres in California. The cost of damages was $420.3 million and the number of fatalities was 6 civilians and 2 firefighters.</p>
+          </div>
+        </div>
+        <div class="swiper-slide" style="background-image: url(fire.jpg)" data-year="2017">
+          <div class="swiper-slide-content"><span class="timeline-year">2017</span>
+            <h4 class="timeline-title">The Tubb Fire</h4>
+            <p class="timeline-text">"The Tubbs Fire was a wildfire in Northern California during October 2017. At the time, the Tubbs Fire was the most destructive wildfire in California history, burning parts of Napa, Sonoma, and Lake counties, inflicting its greatest losses in the city of Santa Rosa."(Wikipedia) A total of 22 people died and 36,807 acres burned.</p>
+          </div>
+        </div>
+        <div class="swiper-slide" style="background-image: url(pp.jpg)" data-year="2018">
+          <div class="swiper-slide-content"><span class="timeline-year">2018</span>
+            <h4 class="timeline-title">Paradise Fire</h4>
+            <p class="timeline-text"> According to Wikipedia, this camp fire is the deadiest and most expensive fire in California's history. The cause was a fallen power line by PG&E. A total of 153,336 acres were burned and 85 civilian fatlities, 5 firefighter fatlities, and one missing person. The total damage was about $16.5 billion.  </p>
+          </div>
+        </div>
+        <div class="swiper-slide" style="background-image: url(2019.jpg)" data-year="2019">
+          <div class="swiper-slide-content"><span class="timeline-year">2019</span>
+            <h4 class="timeline-title">Small Fires</h4>
+            <p class="timeline-text">According to Wikipedia, "The 2019 wildfire season is the current-running fire season in California. So far, over 6,872 fires have been recorded according to Cal Fire and the US Forest Service, totaling an estimated of 253,321 acres (102,515 ha) of burned land as of November 24."</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+<script>
+    $(function(){
+   
+var timelineSwiper = new Swiper ('.timeline .swiper-container', {
+  direction: 'vertical',
+  loop: false,
+  speed: 1600,
+  pagination: '.swiper-pagination',
+  paginationBulletRender: function (swiper, index, className) {
+    var year = document.querySelectorAll('.swiper-slide')[index].getAttribute('data-year');
+    return '<span class="' + className + '">' + year + '</span>';
+  },
+  paginationClickable: true,
+  nextButton: '.swiper-button-next',
+  prevButton: '.swiper-button-prev',
+  breakpoints: {
+    768: {
+      direction: 'horizontal',
+    }
+  }
+});    
+    
+             
+    });
+</script>
+<div class="w3-container w3-row w3-center w3-white " style="padding:50px 50px">
+
+     <div class="w3-center"><img src="https://docs.google.com/drawings/d/e/2PACX-1vQx8wUg_PlPhfHJZvzAUqI1O-a-JjtmpGRKfJNg1wvoTE9C19k4DRuJqEWx6r3BCmNaT63DNXPiyz17/pub?w=960&amp;h=720"></div>
+</div> 
+
+ 
+  
+    
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class=" w3-section">
+      <a href="https://docs.google.com/document/d/e/2PACX-1vQ4ovgnAOqTUkwRZWlHXveLdj7V-Ah8swlXeDEUWGygBh2jjo9bxZT5PXlHEKLQvUVkVpL4pP1sA_kZ/pub " class="w3-button w3-light-grey">Work Cited Link</a>
+  </div>
+
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
